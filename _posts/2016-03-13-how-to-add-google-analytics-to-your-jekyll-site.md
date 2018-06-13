@@ -7,7 +7,7 @@ Now that you have your Jekyll blog up and running, you'll probably want to know 
 
 <amp-img layout="responsive" width="800" height="517" src="/assets/images/jekyll.jpg"></amp-img>
 
-### Get your Google Analytics tracking code
+## Get your Google Analytics tracking code
 
 Create your [Google Analytics account](https://analytics.google.com/analytics/web/?authuser=0#provision/SignUp/ "Google Analytics") if you haven’t already got one.
 
@@ -15,7 +15,7 @@ Navigate to _Admin > Property > Tracking Info > Tracking Code_ and make a note o
 
 <hr>
 
-### Add your tracking code to Jekyll
+## Add your tracking code to Jekyll
 
 Thanks to Jekyll’s templating system, you only have to add your tracking code once, and Jekyll will include the code on all of your blog pages.
 
@@ -37,7 +37,7 @@ Remember to replace `UA-XXXXXXX-X` with `{{ "{{ site.google_analytics " }}}}`.
 
 <hr>
 
-### Add Google Analytics Tracking ID to Jekyll’s _config.yml file
+## Add Google Analytics Tracking ID to Jekyll’s _config.yml file
 
 Under 'Google service', add your tracking ID and save.
 
