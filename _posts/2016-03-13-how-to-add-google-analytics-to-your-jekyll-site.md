@@ -50,7 +50,7 @@ Replace `UA—XXXXXXXX-X` with your own tracking ID.
 
 The last step is to open `_includes.head.html` and add this code before the end of the `</head>` tag. 
 
-{% highligher html %}
+{% highligher %}
 {% raw %}{% if site.google_analytics and jekyll.environment == 'production' % "}
 {% include analytics.html %}
 {% endif %}{% endraw %}
