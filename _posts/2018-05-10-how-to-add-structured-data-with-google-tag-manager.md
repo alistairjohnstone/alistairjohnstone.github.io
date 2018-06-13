@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-Add structured data to page templates using Google Tag Manager to save you time and money. 
+Adding structured data cto your site has many benefits and using Google Tag Manager to add structured data to your website templates saves you time and money.
 
 <amp-img src="/assets/images/book-tunnel.jpg" height="560" width="840" layout="responsive"></amp-img>
 
