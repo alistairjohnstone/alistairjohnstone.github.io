@@ -4,4 +4,4 @@ title: Contact
 permalink: /about/
 published: true
 ---
-Hello mysterious person. Contact me on [LinkedIn](https://www.linkedin.com/in/alistair-johnstone).
+Hello mysterious person. Say hello on [LinkedIn](https://www.linkedin.com/in/alistair-johnstone).
