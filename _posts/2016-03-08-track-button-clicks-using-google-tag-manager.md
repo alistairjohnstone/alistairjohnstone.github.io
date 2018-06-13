@@ -62,4 +62,4 @@ Open the preview and debug window and make sure that the tag is firing correctly
 
 Open Google Analytics and go to _Real-time_ > _Events_ where you will be able to see your button clicks in real time.
 
-<amp-img src="/assets/images./real-time-button-click.jpg" height="243" width="660" layout="responsive" alt="GA real-time events"></amp-img>
+<amp-img src="/assets/images/real-time-button-click.jpg" height="243" width="660" layout="responsive" alt="GA real-time events"></amp-img>
