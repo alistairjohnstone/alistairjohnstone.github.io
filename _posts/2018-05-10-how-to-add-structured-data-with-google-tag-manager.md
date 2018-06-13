@@ -1,7 +1,7 @@
 ---
 published: true
 ---
-Adding structured data cto your site has many benefits and using Google Tag Manager to add structured data to your website templates saves you time and money.
+Adding structured data to your site has many benefits and using Google Tag Manager to do this ensures your structured data is flexible and scalable.
 
 <amp-img src="/assets/images/book-tunnel.jpg" height="560" width="840" layout="responsive"></amp-img>
 
