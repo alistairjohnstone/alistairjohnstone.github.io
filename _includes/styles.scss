@@ -231,6 +231,7 @@ body {
     line-height: 1.1;
     color: #333332;
     margin-bottom: 50px;
+    font-family: $font-serif;
   }
   .author-image {
     background-image: url({{ site.baseurl }}{{site.author_image}});
