@@ -221,7 +221,7 @@ body {
 
 .post {
   .post-meta {
-    font-family: $font-serif;
+    font-family: $font-sans;
   }
   .post-title {
     font-weight: 700;
@@ -231,7 +231,7 @@ body {
     line-height: 1.1;
     color: #333332;
     margin-bottom: 50px;
-    font-family: $font-serif;
+    font-family: $font-sans;
   }
   .author-image {
     background-image: url({{ site.baseurl }}{{site.author_image}});
