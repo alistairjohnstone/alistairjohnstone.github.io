@@ -21,7 +21,7 @@ Thanks to Jekyll’s templating system, you only have to add your tracking code 
 
 Create a new file called `analytics.html` in the `_includes` folder inside your Jekyll project and paste in your Google Analytics tracking code. It should look something like this:
 
-``` html
+{% highlighter html %}
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,7 +31,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   ga('send', 'pageview');
   test
 </script>
-```
+{% end highlighter %}
 
 Remember to replace `UA-XXXXXXX-X` with `{{ "{{ site.google_analytics " }}}}`.
 
@@ -41,20 +41,20 @@ Remember to replace `UA-XXXXXXX-X` with `{{ "{{ site.google_analytics " }}}}`.
 
 Under 'Google service', add your tracking ID and save.
 
-``` yml
+{% highlighter yml %}
 Google services
 google_analytics: UA—XXXXXXXX-X
-```
+{% end highligher %}
 
 Replace `UA—XXXXXXXX-X` with your own tracking ID.
 
 The last step is to open `_includes.head.html` and add this code before the end of the `</head>` tag. 
 
-``` html
+{% highligher html %}
 {% raw %}{% if site.google_analytics and jekyll.environment == 'production' % "}
 {% include analytics.html %}
 {% endif %}{% endraw %}
-```
+{% end highligher %}
 
 This ensures that only page views in the production environment are registered with Google Analytics. Now when you run `jekyll serve` your Google Analytics code will not load.
 
