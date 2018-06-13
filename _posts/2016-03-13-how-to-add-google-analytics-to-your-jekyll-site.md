@@ -21,7 +21,7 @@ Thanks to Jekyll’s templating system, you only have to add your tracking code 
 
 Create a new file called `analytics.html` in the `_includes` folder inside your Jekyll project and paste in your Google Analytics tracking code. It should look something like this:
 
-{% highlight html %}
+``` html
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,7 +31,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   ga('send', 'pageview');
   test
 </script>
-{% endhighlight %}
+```
 
 Remember to replace `UA-XXXXXXX-X` with `{{ "{{ site.google_analytics " }}}}`.
 
