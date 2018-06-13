@@ -3,7 +3,7 @@ published: true
 ---
 Add structured data to page templates using Google Tag Manager to save you time and money. 
 
-<amp-img src="/assets/images/structured-data.jpg" height="343" width="1325" layout="responsive"></amp-img>
+<amp-img src="/assets/images/book-tunnel.jpg" height="560" width="840" layout="responsive"></amp-img>
 
 ### Benefits of implementing with GTM
 
@@ -19,6 +19,8 @@ Be sure to use the JSON-LD format, as Google can still read this format when inj
 ### Why you should add structured data to your site
 
 Adding structured data to your website makes it eligible for [Google's Search Features](https://developers.google.com/search/docs/guides/search-features "Search Features")
+
+<amp-img src="/assets/images/structured-data.jpg" height="343" width="1325" layout="responsive"></amp-img>
 
 This results in:
 
