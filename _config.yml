@@ -23,7 +23,7 @@ twitter_username: alsjohnstone
 github_username:  alsjohnstone
 
 # Google Analytics
-analytics_id: ""
+analytics_id: "UA-70159337-7"
 
 # Build settings
 markdown: kramdown
