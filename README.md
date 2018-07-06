@@ -1,3 +1,3 @@
-# Amplify for Jekyll
+# Just my blog
 
-My blog.
+Probably nothing on here.
