@@ -5,7 +5,7 @@ published: false
 
 ![]({{site.baseurl}}/https://alsjohnstone.com/assets/images/javascript-books.jpg)
 
-### Remember to use <script> tags in your Custom HTML tags
+### Remember to use \<script> tags in your Custom HTML tags
   
 ### You can refer to other GTM variables in the JavaScript context
 
@@ -17,6 +17,4 @@ You can even have a variable return a function and call that.
 
 ### User querySelector() and querySelectorAll()
 
-## Respect the race condition
-
-
+### Respect the race condition
