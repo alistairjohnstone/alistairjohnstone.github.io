@@ -33,7 +33,8 @@ A really useful feature of GTM is being able to refer to JavaScript variables.
 ![]({{site.baseurl}}/assets/images/refer-to-variables.png)
 
 Here we are able to remove trailing whitespace from revenue in the ecommerce object.
-Note that resolving a variable is quite an 'expensive' operation.
+
+### Note that resolving a variable is quite an 'expensive' operation.
 
 Statements in a loop are executed for each iteration of the loop, which can slow down your JavaScript.
 
@@ -43,7 +44,7 @@ When writing JavaScript, It’s good practice to access the length of the proper
 
 W3schools have more information on JavaScript performance.
 
-## You can even have a variable return a function and call that
+### You can even have a variable return a function and call that
 
 This is really handy if you reusing snippets of code in different Custom HTML Tags or Custom JavaScript Variables in your GTM container.
 
