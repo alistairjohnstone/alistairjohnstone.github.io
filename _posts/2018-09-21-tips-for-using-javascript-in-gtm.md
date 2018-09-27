@@ -5,7 +5,7 @@ published: true
 
 Google Tag Manager is essentially just a JavaScript library and knowing how to use JavaScript with GTM can get you a long way. In Google Tag Manager, you can use JavaScript in Custom JavaScript Variables and Custom HTML tags. Here’s a few things that I have found useful to know, and hopefully you will too.
 
-## Use `querySelector()` and `querySelectorAll()`
+## Use querySelector() and querySelectorAll()
 
 You may be tempted to use the age old methods `getElementByTagName()` or `getElementById()`, which are perfectly valid, but wherever possible I’d recommend using CSS selectors in combination with `querySelector()` and `querySelectorAll()`.
 
@@ -17,7 +17,7 @@ In my opinion, this combination is one of the greatest ways to leverage GTM beca
 
 If you’d like to brush up on your CSS selectors, [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and [W3Schools](https://www.w3schools.com/cssref/css_selectors.asp) both have excellent resources.
 
-## Remember to use `<script>` tags in your Custom HTML
+## Remember to use <script> tags in your Custom HTML
 
 When adding your JavaScript to Custom HTML tags, always remember to wrap in `<script>` tags. If you forget to do this your JavaScript will be rendered as text at the bottom of the page!
 
