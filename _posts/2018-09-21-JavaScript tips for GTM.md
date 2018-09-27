@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Tips for using JavaScript in Google Tag Manager
 
@@ -79,5 +79,3 @@ Books
 - [DOM Enlightenment](http://shop.oreilly.com/product/0636920027690.do)
 - [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
 - [Professional JavaScript for Web Developers](https://www.amazon.co.uk/Professional-JavaScript-Developers-Wrox-Guides/dp/1118026691)
-
-
