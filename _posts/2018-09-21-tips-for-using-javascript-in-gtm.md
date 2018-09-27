@@ -1,5 +1,6 @@
 ---
 published: true
+title: JavaScript tips for Google Tag Manager
 ---
 ![]({{site.baseurl}}/assets/images/javascript-tips.jpg)
 
