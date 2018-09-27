@@ -20,7 +20,7 @@ In my opinion, this combination is one of the greatest ways to leverage GTM beca
 
 If you’d like to brush up on your CSS selectors, [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and [W3Schools](https://www.w3schools.com/cssref/css_selectors.asp) both have excellent resources.
 
-## Remember to use <script> tags in your Custom HTML
+## Remember to use \<script> tags in your Custom HTML
 
 When adding your JavaScript to Custom HTML tags, always remember to wrap in `<script>` tags. If you forget to do this your JavaScript will be rendered as text at the bottom of the page!
 
