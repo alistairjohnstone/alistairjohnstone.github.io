@@ -2,9 +2,9 @@
 published: true
 title: JavaScript tips for Google Tag Manager
 ---
-![]({{site.baseurl}}/assets/images/javascript-tips.jpg)
-
 Knowing JavaScript can get you a long way in GTM, it's essentially just a JavaScript library. There are two main places you can use JavaScript in GTM: Custom JavaScript Variables and Custom HTML tags. 
+
+![]({{site.baseurl}}/assets/images/javascript-tips.jpg)
 
 Here’s a few things that I have found useful to know, and hopefully you will too.
 
@@ -14,7 +14,7 @@ You may be tempted to use the age old methods `getElementByTagName()` or `getEle
 
 ![]({{site.baseurl}}/assets/images/querySelector.png)
 
-In my opinion, this combination is one of the greatest ways to leverage GTM because they just make everything easier. For triggers alone CSS selectors are life-savers because you can use the click element to target pretty much any element on the page, regardless of if they have ID or class attributes.
+In my opinion, this combination is one of the greatest ways to leverage GTM because they just make everything easier. For triggers alone, CSS selectors are life-savers because you can use the click element to target pretty much any element on the page, regardless of if they have ID or class attributes.
 
 ![]({{site.baseurl}}/assets/images/cssselectors.png)
 
