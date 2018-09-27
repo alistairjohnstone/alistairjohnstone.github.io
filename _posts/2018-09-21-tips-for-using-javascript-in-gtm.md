@@ -1,8 +1,6 @@
 ---
 published: true
 ---
-# Tips for using JavaScript in Google Tag Manager
-
 ![]({{site.baseurl}}/assets/images/javascript-tips.jpg)
 
 Google Tag Manager is essentially just a JavaScript library and knowing how to use JavaScript with GTM can get you a long way. In Google Tag Manager, you can use JavaScript in Custom JavaScript Variables and Custom HTML tags. Here’s a few things that I have found useful to know, and hopefully you will too.
