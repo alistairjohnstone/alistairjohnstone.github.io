@@ -56,12 +56,11 @@ For example, you could have a function that creates a first party cookie, which 
 
 Normally in JavaScript we would use bracket notation to access array indices.
 
-<amp-img src="/assets/images/bracket-notation.png" width="340" height="143" layout="responsive"></amp-img>
+<amp-img src="/assets/images/bracket-notation.png" width="340" height="143"></amp-img>
 
 However in the Data Layer Variable, in order to access array indices, you have to remember to use dot notation.
 
-![]({{site.baseurl}}/assets/images/dot-notation.png)
-<amp-img src="/assets/images/dot-notation.png" width="347" height="115" layout="responsive"></amp-img>
+<amp-img src="/assets/images/dot-notation.png" width="347" height="115"></amp-img>
 
 This is a mildly annoying quirk that you soon get used to, however it can catch you out if you’re not aware of it!
 
