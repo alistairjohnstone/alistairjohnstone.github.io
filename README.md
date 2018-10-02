@@ -1,3 +1,3 @@
 # Just my blog
 
-Probably nothing on here.
+Nothing to see here.
