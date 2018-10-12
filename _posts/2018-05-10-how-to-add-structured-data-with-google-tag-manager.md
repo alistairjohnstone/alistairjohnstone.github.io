@@ -1,6 +1,7 @@
 ---
 published: true
 title: How to add Structured Data with Google Tag Manager
+permalink: how-to-add-structured-data-with-google-tag-manager.md
 ---
 Adding structured data to your site has many benefits and using Google Tag Manager to do this ensures your structured data is flexible and scalable.
 
