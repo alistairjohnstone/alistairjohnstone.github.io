@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to add Google Analytics to your Jekyll site
+title: How to add Google Analytics to your Jekyll blog
 published: true
-permalink: how-to-add-google-analytics-to-your-jekyll-site
+permalink: how-to-add-google-analytics-to-your-jekyll-bogl
 ---
 Now that you have your Jekyll blog up and running, you'll probably want to know if anyone is reading it. Here's how to add Google Analytics to your Jekyll site in a few simple steps.
 
