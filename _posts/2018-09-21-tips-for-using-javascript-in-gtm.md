@@ -7,7 +7,7 @@ Knowing JavaScript can get you a long way in GTM, after all, it's essentially ju
 
 <amp-img src="/assets/images/javascript-tips.jpg" width="700" height="393" layout="responsive"></amp-img>
 
-Here’s a few things that I have found useful to know, and hopefully you will too.
+Here’s a few things that I've found really useful:
 
 ## Use querySelector() and querySelectorAll()
 
