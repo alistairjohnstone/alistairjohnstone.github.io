@@ -1,6 +1,6 @@
 ---
 title: 'Prophecise: a tool for forecasting GA data using Facebook Prophet'
-date: 2020-06-21 20:28:04.615000000 Z
+date: 2020-06-21 20:28:04 Z
 permalink: prophecise-automatically-build-forecasts-for-google-analytics
 layout: post
 ---
