@@ -13,7 +13,7 @@ A web app that leverages Facebook Prophet to create fast and robust time-series 
 
 <amp-img src="/assets/images/screely-1592742794169.png" width="929" height="510" layout="responsive"></amp-img>
 
-I wanted a create a fast and simple way for marketers/analysts/data scientists to generate forecasts from their Google Analytics data using Facebook Prophet. But really what I wanted was an interesting project to work I came across Gareth Cull’s amazing open-source [Forecastr](https://github.com/garethcull/forecastr) app, which provided a great starting point for [Prophecise](https://prophecise.com).
+I wanted a create a fast and simple way for marketers/analysts/data scientists to generate forecasts from their Google Analytics data using Facebook Prophet. When I came across Gareth Cull’s amazing open-source [Forecastr](https://github.com/garethcull/forecastr) app, I knew it would provide a great starting point for [Prophecise](https://prophecise.com).
 
 ## What is Facebook Prophet?
 
