@@ -1,8 +1,9 @@
 ---
-published: true
 title: JavaScript tips for Google Tag Manager
+date: 2018-09-21 00:00:00 Z
 permalink: tips-for-using-javascript-in-gtm
 ---
+
 Knowing JavaScript can get you a long way in GTM, after all, it's essentially just a JavaScript library. The two places you'll be using JavaScript are in Custom JavaScript Variables and Custom HTML tags. 
 
 <amp-img src="/assets/images/javascript-tips.jpg" width="700" height="393" layout="responsive"></amp-img>

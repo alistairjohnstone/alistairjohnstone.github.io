@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Track button clicks as Google Analytics events using Google Tag Manager
-published: true
+date: 2016-03-08 00:00:00 Z
 permalink: track-button-clicks-using-google-tag-manager
+layout: post
 ---
+
 In this post I’ll show you how to track button clicks by using Google Tag Manager to send events to Google Analytics.
 
 <amp-img src="/assets/images/click-me.gif" height="349" width="660" layout="responsive" alt="Track button clicks with GTM"></amp-img>
