@@ -1,7 +1,7 @@
 ---
 title: 'Prophecise: a tool for forecasting GA data using Facebook Prophet'
 date: 2020-06-21 13:45:00 Z
-permalink: tips-for-using-javascript-in-gtm
+permalink: prophecise-forecast-ga-data-with-facebook-prophet
 categories:
 - Facebook Prophet
 - Google Analytics API
