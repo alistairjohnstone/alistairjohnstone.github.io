@@ -1,12 +1,12 @@
 ---
 title: 'Prophecise: a tool for forecasting GA data using Facebook Prophet'
 date: 2020-06-21 13:45:00 Z
+permalink: tips-for-using-javascript-in-gtm
 categories:
 - Facebook Prophet
 - Google Analytics API
 - Forecastr
 - Prophecise
-permalink: tips-for-using-javascript-in-gtm
 ---
 
 I wanted a create a fast and simple way for marketers/analysts/data scientists to generate forecasts from their Google Analytics data using Facebook Prophet. But really what I wanted was an interesting project to work I came across Gareth Cull’s amazing open-source [Forecastr](https://github.com/garethcull/forecastr) app, which provided a great starting point for [Prophecise](https://prophecise.com).
