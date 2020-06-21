@@ -9,14 +9,16 @@ collections:
     title: Uploads
     output: true
 email: alsjohnstone@gmail.com
-description: 'I like data and making things with with JavaScript, R, Python and Google Cloud Platform'
+description: I like data and making things with with JavaScript, R, Python and Google
+  Cloud Platform
 logo: "/assets/images/bar-chart.gif"
 baseurl: 
 url: http://yourdomain.com
 paginate: 5
 post_dirs: false
 name: alsjohnstone
-bio: 'I like data and making things with with JavaScript, R, Python and Google Cloud Platform'
+bio: I like data and making things with with JavaScript, R, Python and Google Cloud
+  Platform
 author_image: "/assets/images/bar-chart.gif"
 twitter_username: alsjohnstone
 github_username: alsjohnstone
