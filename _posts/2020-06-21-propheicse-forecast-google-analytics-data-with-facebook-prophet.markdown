@@ -21,9 +21,13 @@ I wanted a create a fast and simple way for marketers/analysts/data scientists t
 
 Prophecise is a Flask app that uses Python and JavaScript to automatically forecast your GA data. Using the Google Analytics API I was able to add functionality that lets you log in with your Analytics account and pull data directly from GA into the guided UI and preview the data before generating a forecast.
 
+<amp-img src="/assets/images/prophecise-ga-data.jpg" width="963" height="608" layout="responsive"></amp-img>
+
 You can select the account/property/view you’d like to pull data from, and which metric you’d like to forecast. There are also additional options to enter your own metric (if the one you need is not available on the dropdown) and to select a specific segment. To see a list of all available metrics see Google’s Dimensions and Metrics Explorer.
 
 This data is then sent back to the server so we can do some forecasting with Facebook Prophet! In most cases you'll find Facebook Prophet generates pretty good forecasts out of the box, but in addition to this there's a set of tunable parameters.
+
+<amp-img src="/assets/images/prophecise-tunable.jpg" width="896" height="481" layout="responsive"></amp-img>
 
 For more information on hyper parameter tuning, I'd recommend reading the Facebook Prophet documentation and this excellent article on Towards Data Science by Ruan van der Merwe.
 
