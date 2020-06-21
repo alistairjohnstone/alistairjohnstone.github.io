@@ -31,6 +31,6 @@ This data is then sent back to the server so we can do some forecasting with Fac
 
 <amp-img src="/assets/images/prophecise-tunable.jpg" width="896" height="481" layout="responsive"></amp-img>
 
-For more information on hyper parameter tuning, I'd recommend reading the Facebook Prophet documentation and this excellent article on Towards Data Science by Ruan van der Merwe.
+For more information on hyper parameter tuning, I'd recommend reading the [Facebook Prophet documentation](https://facebook.github.io/prophet/) and this [great article](https://towardsdatascience.com/implementing-facebook-prophet-efficiently-c241305405a3) on Towards Data Science by Ruan van der Merwe.
 
 Start building your forecasts at [prophecise.com](https://prophecise.com)
