@@ -9,7 +9,8 @@ collections:
     title: Uploads
     output: true
 email: alsjohnstone@gmail.com
-description: 'I like making things with with JavaScript, R, Python and Google Cloud Platform'
+description: I like making things with with JavaScript, R, Python and Google Cloud
+  Platform
 logo: "/assets/images/bar-chart.gif"
 baseurl: ''
 url: http://yourdomain.com
