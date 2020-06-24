@@ -1,5 +1,5 @@
 ---
-title: Web analytics development | Alistair Johnstone's blog
+title: Alistair Johnstone | Analytics Developer
 timezone: UTC
 collections:
   posts:
@@ -9,9 +9,7 @@ collections:
     title: Uploads
     output: true
 email: alsjohnstone@gmail.com
-description: 'Digital analyst, GTM enthusiast and R rookie.
-
-'
+description: 'I like making things with with JavaScript, R, Python and Google Cloud Platform'
 logo: "/assets/images/bar-chart.gif"
 baseurl: ''
 url: http://yourdomain.com
