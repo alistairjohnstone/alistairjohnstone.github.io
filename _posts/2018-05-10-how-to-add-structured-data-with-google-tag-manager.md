@@ -1,5 +1,5 @@
 ---
-title: How To Add Structured Data With Google Tag Manager
+title: How to add Structured Data to your site using Google Tag Manager
 date: 2018-05-10 00:00:00 Z
 ---
 
