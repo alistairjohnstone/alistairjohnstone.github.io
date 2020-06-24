@@ -1,6 +1,8 @@
 ---
-published: true
+title: How To Add Structured Data With Google Tag Manager
+date: 2018-05-10 00:00:00 Z
 ---
+
 Google Tag Manager is a great way to add structured data to your page templates. 
 
 <amp-img src="/assets/images/structured-data.jpg" height="343" width="1325" layout="responsive"></amp-img>
