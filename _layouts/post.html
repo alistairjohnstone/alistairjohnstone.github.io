@@ -26,34 +26,14 @@ layout: default
         <section class="author">
           <div class="author-image"></div>
           <h4>{{ site.name }}</h4>
-          <p class="bio">{{site.bio}}</p>
-
-          <p>
-            <span>
+          <p class="bio"><!-- {{site.bio}} -->
+            <span class="bio">
               {% if site.github_username %}
                 {% include icon-github.html username=site.github_username %}
               {% endif %}
             </span>
-
-            <span>
-              {% if site.twitter_username %}
-                {% include icon-twitter.html username=site.twitter_username %}
-              {% endif %}
-            </span>
           </p>
-          <hr>
-          <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
         </section>
-      </div>
-      <div class="isRight">
-        <h5 class="index-headline featured"><span>Supported by</span></h5>
-        <footer class="site-footer">
-          <section class="poweredby">Made with with <a href="http://jekyllrb.com"> Jekyll</a> and <a href="https://github.com/ageitgey/amplify">Amplify</a></section>
-          <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i>Subscribe</span></a>
-          <div class="inner">
-            <section class="copyright">&copy; {{ site.time | date: '%Y' }} Alistair Johnstone</section>
-          </div>
-        </footer>
       </div>
     </div>
   </article>
