@@ -7,6 +7,7 @@ categories:
 - Google Analytics API
 - Forecastr
 - Prophecise
+layout: post
 ---
 
 A web app that leverages Facebook Prophet to create fast and robust time-series forecasts from your Google Analytics data, all wrapped up in a simple to use user interface.
