@@ -14,7 +14,7 @@ A web app that leverages Facebook Prophet to create fast and robust time-series 
 
 <amp-img src="/assets/images/screely-1592742794169.png" width="929" height="510" layout="responsive"></amp-img>
 
-I wanted a create a fast and simple way for marketers/analysts/data scientists to generate forecasts from their Google Analytics data using Facebook Prophet. When I came across Gareth Cull’s amazing open-source [Forecastr](https://github.com/garethcull/forecastr) app, I knew it would provide a great starting point for [Prophecise](https://prophecise.com).
+I wanted a create a fast and simple way for marketers/analysts/data scientists to generate forecasts from their Google Analytics data using Facebook Prophet. When I was researching how to do this I came across Gareth Cull’s amazing open-source [Forecastr](https://github.com/garethcull/forecastr) app, which has been an amazing starting point for [Prophecise](https://prophecise.com).
 
 ## What is Facebook Prophet?
 
@@ -22,11 +22,15 @@ I wanted a create a fast and simple way for marketers/analysts/data scientists t
 
 ## What is Prophecise?
 
-Prophecise is a Flask app that uses Python and JavaScript to automatically forecast your GA data. Using the Google Analytics API I was able to add functionality that lets you log in with your Analytics account and pull data directly from GA into the guided UI and preview the data before generating a forecast.
+Prophecise is web app that I built using Python and JavaScript to automatically forecast your GA data. It allows users to log in with their Analytics account and pull their data directly from GA into the guided UI to preview the data before generating a forecast.
+
+Here's a high-level overview of the data flow:
+
+<amp-img src="/assets/images/prophecise-data-flow.jpg" width="1280" height="582" layout="responsive"></amp-img>
+
+The first step is to select the *account*, *property* and *view* you’d like to pull data from, and which metric you’d like to forecast. There are also additional options to enter your own metric (if the one you need is not available on the dropdown) and to select a specific segment. To see a list of all available metrics see Google’s [Dimensions and Metrics Explorer](https://ga-dev-tools.appspot.com/dimensions-metrics-explorer/).
 
 <amp-img src="/assets/images/prophecise-ga-data.jpg" width="963" height="608" layout="responsive"></amp-img>
-
-You can select the account/property/view you’d like to pull data from, and which metric you’d like to forecast. There are also additional options to enter your own metric (if the one you need is not available on the dropdown) and to select a specific segment. To see a list of all available metrics see Google’s Dimensions and Metrics Explorer.
 
 This data is then sent back to the server so we can do some forecasting with Facebook Prophet! In most cases you'll find Facebook Prophet generates pretty good forecasts out of the box, but in addition to this there's a set of tunable parameters.
 
@@ -34,4 +38,4 @@ This data is then sent back to the server so we can do some forecasting with Fac
 
 For more information on hyper parameter tuning, I'd recommend reading the [Facebook Prophet documentation](https://facebook.github.io/prophet/) and this [great article](https://towardsdatascience.com/implementing-facebook-prophet-efficiently-c241305405a3) on Towards Data Science by Ruan van der Merwe.
 
-Start building your forecasts at [prophecise.com](https://prophecise.com)
+Start building your forecasts at [prophecise.com](https://prophecise.com?utm_source=prophecise-post&utm_medium=my-blog)
