@@ -9,11 +9,11 @@ categories:
 layout: post
 ---
 
-Here’s how you can use Facebook’s open-source Prophet library in Google Sheets to create  accurate time-series predictions using simple and intuitive parameters.
+Here’s how you can use Facebook’s open-source Prophet library in Google Sheets to create accurate time-series predictions using simple and intuitive parameters.
 
 <amp-img src="/assets/images/sheets-prophet.png" width="1280" height="720" layout="responsive"></amp-img>
 
-This is a proof-of-concept solution for Prophet forecasting in Google Sheets. You may want to build on this to include additional parameters that will give you greater control over the forecast model.
+This is a proof-of-concept solution for Prophet forecasting in Google Sheets. You might want to build on this to include additional parameters that will give you greater control over the forecast model.
 
 ## What is Facebook Prophet?
 
@@ -25,11 +25,11 @@ Here’s an overview of the data flow for this solution:
 
 <amp-img src="/assets/images/sheets-prophet-data-flow.png" width="1403" height="693" layout="responsive"></amp-img>
 
-As you can see it’s pretty straightforward, the user fills in the custom function and those variables are sent off to our Python script for forecasting and the results returned to Google Sheets.
+The user fills in the custom function and those variables are sent off to our Python script for forecasting and the results returned to Google Sheets.
 
 ## Get started by building your own API with Python
 
-We’ll be building our own API using FastAPI, which is a modern, fast (high-performance), web framework for building APIs with Python. This will take parameters from the Google Sheets function and do all the forecasting in the background with Facebook Prophet:
+We’ll be building our own API using [FastAPI](https://fastapi.tiangolo.com/), which is a modern, fast (high-performance), web framework for building APIs with Python. This will take parameters from the Google Sheets function and do all the forecasting in the background with Facebook Prophet. I won't go in to how to use FastAPI but you can read all you need to know [here](https://fastapi.tiangolo.com/).
 
 {% highlight python %}
 from fastapi import FastAPI
@@ -96,9 +96,9 @@ async def create_item(data: Data):
 {% endhighlight %}
 
 ## Upload your API to Google Cloud Platform
-We’ll be running our API on Google Cloud Platform using [Cloud Run](https://cloud.google.com/run), which is a fully managed compute platform for deploying and scaling containerized applications quickly and securely. You'll have to add a billing account to GCP if you haven't already but there is a generous free tier.
+We’ll be running our API on Google Cloud Platform using [Cloud Run](https://cloud.google.com/run), which is a fully managed compute platform for deploying and scaling containerized applications quickly and securely. You'll need to add a billing account to GCP if you haven't already, but there is a generous free tier.
 
-So first of all we need to containerize our app using Docker. If you’re not familiar with Docker then I’d recommend taking a look at their [documentation](https://docs.docker.com/get-started/). You’ll need to create a Dockerfile and deploy on Cloud Run.
+To deploy our API on Cloud Run we first need to containerize our app using Docker. If you’re not familiar with Docker, I recommend taking a look at their [documentation](https://docs.docker.com/get-started/). You’ll need to create a Dockerfile and deploy on Cloud Run which should look something like this:
 
 {% highlight nginx %}
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
@@ -125,12 +125,12 @@ RUN pip install fastapi
 RUN pip install pydantic
 {% endhighlight %}
 
-Once you’ve deployed to Cloud Run, you’ll be given a URL which is used as the API endpoint, which we can use in our Apps Script.
+Once you’ve containerized your API you can [deploy to Cloud Run](https://cloud.google.com/run/docs/quickstarts/build-and-deploy). Once complete, you’ll be given a URL like the one shown below, which will be used as the API endpoint in our Apps Script.
 
 <amp-img src="/assets/images/cloud-run.png" width="861" height="297" layout="responsive"></amp-img>
 
 ## Finally, we use Apps Script to call our API
-Now we're ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting.
+Now we're ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting. The script below sets up the custom function, calls the API and returns the forecast to the user.
 
 {% highlight javascript %}
 /**
