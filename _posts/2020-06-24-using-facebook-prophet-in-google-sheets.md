@@ -1,5 +1,5 @@
 ---
-title: 'Build forecasts in Google Sheets using Facebook Prophet'
+title: Build forecasts in Google Sheets using Facebook Prophet
 date: 2020-06-24 13:45:00 Z
 permalink: how-to-use-facebook-prophet-in-google-sheets-function
 categories:
