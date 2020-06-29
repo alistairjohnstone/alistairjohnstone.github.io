@@ -1,8 +1,8 @@
-I".Z<p>Here’s how you can use Facebook’s open-source Prophet library in Google Sheets to create  accurate time-series predictions using simple and intuitive parameters.</p>
+I"'b<p>Here’s how you can use Facebook’s open-source Prophet library in Google Sheets to create accurate time-series predictions using simple and intuitive parameters.</p>
 
 <amp-img src="/assets/images/sheets-prophet.png" width="1280" height="720" layout="responsive"></amp-img>
 
-<p>This is a proof-of-concept solution for Prophet forecasting in Google Sheets. You may want to build on this to include additional parameters that will give you greater control over the forecast model.</p>
+<p>This is a proof-of-concept solution for Prophet forecasting in Google Sheets. You might want to build on this to include additional parameters that will give you greater control over the forecast model.</p>
 
 <h2 id="what-is-facebook-prophet">What is Facebook Prophet?</h2>
 
@@ -14,11 +14,11 @@
 
 <amp-img src="/assets/images/sheets-prophet-data-flow.png" width="1403" height="693" layout="responsive"></amp-img>
 
-<p>As you can see it’s pretty straightforward, the user fills in the custom function and those variables are sent off to our Python script for forecasting and the results returned to Google Sheets.</p>
+<p>The user fills in the custom function and those variables are sent off to our Python script for forecasting and the results returned to Google Sheets.</p>
 
 <h2 id="get-started-by-building-your-own-api-with-python">Get started by building your own API with Python</h2>
 
-<p>We’ll be building our own API using FastAPI, which is a modern, fast (high-performance), web framework for building APIs with Python. This will take parameters from the Google Sheets function and do all the forecasting in the background with Facebook Prophet:</p>
+<p>We’ll be building our own API using <a href="https://fastapi.tiangolo.com/">FastAPI</a>, which is a modern, fast (high-performance), web framework for building APIs with Python. This will take parameters from the Google Sheets function and do all the forecasting in the background with Facebook Prophet. I won’t go in to how to use FastAPI but you can read all you need to know <a href="https://fastapi.tiangolo.com/">here</a>.</p>
 
 <figure class="highlight">
   <pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
@@ -85,41 +85,41 @@
 </figure>
 
 <h2 id="upload-your-api-to-google-cloud-platform">Upload your API to Google Cloud Platform</h2>
-<p>We’ll be running our API on Google Cloud Platform using <a href="https://cloud.google.com/run">Cloud Run</a>, which is a fully managed compute platform for deploying and scaling containerized applications quickly and securely. You’ll have to add a billing account to GCP if you haven’t already but there is a generous free tier.</p>
+<p>We’ll be running our API on Google Cloud Platform using <a href="https://cloud.google.com/run">Cloud Run</a>, which is a fully managed compute platform for deploying and scaling containerized applications quickly and securely. You’ll need to add a billing account to GCP if you haven’t already, but there is a generous free tier.</p>
 
-<p>So first of all we need to containerize our app using Docker. If you’re not familiar with Docker then I’d recommend taking a look at their <a href="https://docs.docker.com/get-started/">documentation</a>. You’ll need to create a Dockerfile and deploy on Cloud Run.</p>
+<p>To deploy our API on Cloud Run we first need to containerize our app using Docker. If you’re not familiar with Docker, I recommend taking a look at their <a href="https://docs.docker.com/get-started/">documentation</a>. You’ll need to create a Dockerfile and deploy on Cloud Run which should look something like this:</p>
 
 <figure class="highlight">
-  <pre><code class="language-xml" data-lang="xml">FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+  <pre><code class="language-nginx" data-lang="nginx"><span class="k">FROM</span> <span class="nc">tiangolo/uvicorn-gunicorn-fastapi</span><span class="p">:</span><span class="s">python3.7</span>
 
-COPY ./app /app
+<span class="s">COPY</span> <span class="s">./app</span> <span class="n">/app</span>
 
-WORKDIR /app
+<span class="s">WORKDIR</span> <span class="n">/app</span>
 
-RUN apt-get -y update  <span class="err">&amp;&amp;</span> apt-get install -y \
-  python3-dev \
-  apt-utils \
-  python-dev \
-  build-essential \
-<span class="err">&amp;&amp;</span> rm -rf /var/lib/apt/lists/*
+<span class="s">RUN</span> <span class="s">apt-get</span> <span class="s">-y</span> <span class="s">update</span>  <span class="s">&amp;&amp;</span> <span class="s">apt-get</span> <span class="s">install</span> <span class="s">-y</span> <span class="err">\</span>
+  <span class="s">python3-dev</span> <span class="err">\</span>
+  <span class="s">apt-utils</span> <span class="err">\</span>
+  <span class="s">python-dev</span> <span class="err">\</span>
+  <span class="s">build-essential</span> <span class="err">\</span>
+<span class="s">&amp;&amp;</span> <span class="s">rm</span> <span class="s">-rf</span> <span class="n">/var/lib/apt/lists/*</span>
 
-RUN pip install --upgrade setuptools
-RUN pip install cython
-RUN pip install numpy
-RUN pip install pandas
-RUN pip install matplotlib
-RUN pip install pystan
-RUN pip install fbprophet
-RUN pip install fastapi
-RUN pip install pydantic</code></pre>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">--upgrade</span> <span class="s">setuptools</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">cython</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">numpy</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">pandas</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">matplotlib</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">pystan</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">fbprophet</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">fastapi</span>
+<span class="s">RUN</span> <span class="s">pip</span> <span class="s">install</span> <span class="s">pydantic</span></code></pre>
 </figure>
 
-<p>Once you’ve deployed to Cloud Run, you’ll be given a URL which is used as the API endpoint, which we can use in our Apps Script.</p>
+<p>Once you’ve containerized your API you can <a href="https://cloud.google.com/run/docs/quickstarts/build-and-deploy">deploy to Cloud Run</a>. Once complete, you’ll be given a URL like the one shown below, which will be used as the API endpoint in our Apps Script.</p>
 
 <amp-img src="/assets/images/cloud-run.png" width="861" height="297" layout="responsive"></amp-img>
 
 <h2 id="finally-we-use-apps-script-to-call-our-api">Finally, we use Apps Script to call our API</h2>
-<p>Now we’re ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting.</p>
+<p>Now we’re ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting. The script below sets up the custom function, calls the API and returns the forecast to the user. You’ll need to update the <code class="language-plaintext highlighter-rouge">url</code> variable to your own Cloud Run URL.</p>
 
 <figure class="highlight">
   <pre><code class="language-javascript" data-lang="javascript"><span class="cm">/**
