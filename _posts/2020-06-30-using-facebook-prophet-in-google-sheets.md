@@ -130,7 +130,7 @@ Once you’ve containerized your API you can [deploy to Cloud Run](https://cloud
 <amp-img src="/assets/images/cloud-run.png" width="861" height="297" layout="responsive"></amp-img>
 
 ## Finally, we use Apps Script to call our API
-Now we're ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting. The script below sets up the custom function, calls the API and returns the forecast to the user.
+Now we're ready to set up our custom function for Sheets in Apps Script. We’ll take the user inputs from our custom function and send these on to our API for forecasting. The script below sets up the custom function, calls the API and returns the forecast to the user. You'll need to update the `url` variable to your own Cloud Run URL.
 
 {% highlight javascript %}
 /**
