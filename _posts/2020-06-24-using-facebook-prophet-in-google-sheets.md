@@ -17,7 +17,7 @@ This is a proof-of-concept solution for Prophet forecasting in Google Sheets. Yo
 
 ## What is Facebook Prophet?
 
-Prophet is open source software released by Facebook’s Core Data Science team. It is a procedure for forecasting time series data and works best with time series that have strong seasonal effects and several seasons of historical data. It is available for download on CRAN and PyPI.
+[Prophet](https://facebook.github.io/prophet/) is open source software released by Facebook’s Core Data Science team. It is a procedure for forecasting time series data and works best with time series that have strong seasonal effects and several seasons of historical data. It is available for download on CRAN and PyPI.
 
 ## Overview
 
@@ -30,6 +30,8 @@ The user fills in the custom function and those variables are sent off to our Py
 ## Get started by building your own API with Python
 
 We’ll be building our own API using [FastAPI](https://fastapi.tiangolo.com/), which is a modern, fast (high-performance), web framework for building APIs with Python. This will take parameters from the Google Sheets function and do all the forecasting in the background with Facebook Prophet. I won't go in to how to use FastAPI but you can read all you need to know [here](https://fastapi.tiangolo.com/).
+
+Here we're using some of the more intuitive parameters for Prophet, you can read more about the additional parameters that are available to you in the [Prophet documentation](https://facebook.github.io/prophet/docs/quick_start.html#python-api). I also found this [Implementing Facebook Prophet efficiently](https://towardsdatascience.com/implementing-facebook-prophet-efficiently-c241305405a3) post on Towards Data Science really useful.
 
 {% highlight python %}
 from fastapi import FastAPI
