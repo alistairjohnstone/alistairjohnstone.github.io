@@ -98,7 +98,7 @@ async def create_item(data: Data):
 ## Upload your API to Google Cloud Platform
 We’ll be running our API on Google Cloud Platform using [Cloud Run](https://cloud.google.com/run), which is a fully managed compute platform for deploying and scaling containerized applications quickly and securely. You'll need to add a billing account to GCP if you haven't already, but there is a generous free tier.
 
-To deploy our API on Cloud Run we first need to containerize our app using Docker. If you’re not familiar with Docker, I recommend taking a look at their [documentation](https://docs.docker.com/get-started/). You’ll need to create a Dockerfile and deploy on Cloud Run which should look something like this:
+To deploy our API on Cloud Run we first need to containerize our app using Docker. If you’re not familiar with Docker, I recommend taking a look at their [documentation](https://docs.docker.com/get-started/). You’ll need to create a Dockerfile to assemble your Docker image before you can deploy on Cloud Run, which should look something like this:
 
 {% highlight nginx %}
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
@@ -125,7 +125,7 @@ RUN pip install fastapi
 RUN pip install pydantic
 {% endhighlight %}
 
-Once you’ve containerized your API you can [deploy to Cloud Run](https://cloud.google.com/run/docs/quickstarts/build-and-deploy). Once complete, you’ll be given a URL like the one shown below, which will be used as the API endpoint in our Apps Script.
+Once you’ve containerized your API you're ready to  [deploy your API to Cloud Run](https://cloud.google.com/run/docs/quickstarts/build-and-deploy). Once complete, you’ll be given a URL like the one shown below, which will be used as the API endpoint in our Apps Script.
 
 <amp-img src="/assets/images/cloud-run.png" width="861" height="297" layout="responsive"></amp-img>
 
