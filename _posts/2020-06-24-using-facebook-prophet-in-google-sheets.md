@@ -209,6 +209,8 @@ I’ve been using the formula to forecast Google Analytics data in Google Sheets
 
 `=prophecise("A2:A","B2:B",30,"linear",true,false,false,"UK")`
 
+<amp-img src="/assets/images/prophet-function.png" width="933" height="466" layout="responsive"></amp-img>
+
 In this example I then used the Prophet forecasts in a Google Data Studio dashboard to show predicted trends for KPIs.
 
 Hopefully you found this post useful and it has inspired you to start using your own Python/R functions in Google Sheets, just think of all the cool stuff you could do!
