@@ -27,7 +27,7 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
+$font-serif: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
 
 @mixin respond-to($breakpoint) {
@@ -151,10 +151,8 @@ body {
       }
     }
     .post-excerpt {
-      letter-spacing: -0.02em;
-      font-weight: 300;
       font-style: normal;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.59;
       color: #666665;
     }
@@ -283,7 +281,6 @@ body {
       font-weight: 700;
       font-style: normal;
       line-height: 1.2;
-      margin-top: 50px;
       margin-bottom: 0px;
     }
     table {
@@ -297,7 +294,7 @@ body {
     p {
       font-weight: 400;
       font-style: normal;
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.59;
       letter-spacing: -.002em;
       margin-top: 30px;
@@ -316,7 +313,7 @@ body {
     }
     figure {
       margin: 0;
-      padding: 0 0 30px;
+      padding: 0 0 10px;
     }
     figcaption {
       font-weight: 400;
@@ -517,4 +514,23 @@ pre {
 
 .pagination .disabled {
     opacity: 0;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: 5 ;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
 }
